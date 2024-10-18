@@ -1,4 +1,4 @@
-name: Ping Render Backend
+name: Ping Backend
 
 on:
   schedule:
@@ -7,6 +7,8 @@ on:
 jobs:
   ping:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Curl to Ping Server
-        run: curl -X GET https://your-vercel-url/api/ping 
+    - name: Send a ping request
+      run: |
+        curl -X GET https://ping-server-mmip68lso-shreyas-chaudharis-projects-96709d88.vercel.app/api/ping
