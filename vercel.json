@@ -1,0 +1,8 @@
+{
+    "functions": {
+        "ping.js": {
+            "runtime": "nodejs16.x",
+            "schedule": "every 10 minutes"
+        }
+    }
+}
