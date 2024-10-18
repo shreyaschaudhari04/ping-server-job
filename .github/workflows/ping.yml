@@ -1,0 +1,12 @@
+name: Ping Render Backend
+
+on:
+  schedule:
+    - cron: '*/14 * * * *' 
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl to Ping Server
+        run: curl -X GET https://your-vercel-url/api/ping 
